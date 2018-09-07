@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@using FormPractice.Models
+@model Information
+
+<h1>Enter your information</h1>
+
+<form asp-action="Create" asp-controller="Home" method="post">
+    <div>
+        <span asp-validation-for="FirstName"></span>
+        <label asp-for="FirstName"></label>
+        <input asp-for="FirstName" id="firstname"/>
+    </div>
+    <div>
+        <span asp-validation-for="LastName"></span>
+        <label asp-for="LastName"></label>
+        <input asp-for="LastName" id="lastname"/>
+    </div>
+    <div>
+        <span asp-validation-for="Age"></span>
+        <label asp-for="Age"></label>
+        <input asp-for="Age" id="age"/>
+    </div>
+    <div>
+        <span asp-validation-for="Email"></span>
+        <label asp-for="Email"></label>
+        <input asp-for="Email" id="email"/>
+    </div>
+    <div class="input">
+        <span asp-validation-for="Password"></span>
+        <label asp-for="Password"></label>
+        <input asp-for="Password" id="password"/>
+    </div>
+    <input value="Add User" type="submit" id="new-user-button">    
+</form>
