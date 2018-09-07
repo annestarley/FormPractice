@@ -96,3 +96,7 @@ form {
     font-size: .9em;
     box-shadow: 2px 2px black;
 }
+
+.registered {
+    margin: 50px;
+}

@@ -30,6 +30,13 @@ namespace FormPractice.Controllers
             }
         }
 
+        [HttpGet]
+        [Route("Home/registered")]
+        public IActionResult Registered()
+        {
+            return View("Registered");
+        }
+
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
